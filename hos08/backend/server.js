@@ -20,7 +20,7 @@ passport.use(
       clientID: FACEBOOK_APP_ID,
       clientSecret: FACEBOOK_APP_SECRET,
       //callback url is where you want to go after you login
-      callbackURL: "http://localhost:8000/auth/facebook/callback",
+      callbackURL: "http://localhost:8000/facebook/callback",
       //Data that you want to get back from facebook,
       profileFields: ["id", "displayName", "email"],
     },
