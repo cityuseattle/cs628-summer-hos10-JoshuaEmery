@@ -8,6 +8,7 @@ import MyCreate from "./components/myCreate";
 import MyEdit from "./components/myEdit";
 import MyRecordList from "./components/myRecordList";
 import MyNav from "./components/myNav";
+import Login from "./components/login";
 
 // We import all the components we need in our app
 // App.js
@@ -17,7 +18,8 @@ const App = () => {
     <div>
       <MyNav />
       <Routes>
-        <Route exact path="/" element={<MyRecordList />} />
+        <Route exact path="/" element={<Login />} />
+        <Route exact path="/home" element={<MyRecordList />}></Route>
         <Route path="/create" element={<MyCreate />} />
         <Route path="/edit/:id" element={<MyEdit />} />
       </Routes>
